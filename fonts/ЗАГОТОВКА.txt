@@ -1,0 +1,31 @@
+Для подключения шрифта 
+скачиваем в папку fonts 5 форматов 
+eot woff ttf svg otf
+
+путь к файлу всегда в формате шаблона ../fonts/
+можем менять 
+font-weight: 400;
+   font-style: normal;
+
+ставим нужный font-family 
+он для каждого разный
+
+ @font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Regular.eot');
+	src: local('☺'), url('../fonts/Gilroy-Regular.woff') format('woff'), url('../fonts/Gilroy-Regular.ttf') format('truetype'), url('../fonts/Gilroy-Regular.svg') format('svg');
+	font-weight: 400;
+   font-style: normal;
+}
+
+Шпаргалка 
+font-weight:
+100 - thin
+200 - UltraLite
+300 - lite
+400 - normal
+500 - medium
+600 - semibold
+700 - bold
+800 - Heavy
+900 - black
